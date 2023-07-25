@@ -1,0 +1,34 @@
+{
+  "name": "web_pano",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack serve --mode development",
+    "run": "node index",
+    "build": "webpack --mode production",
+    "test-downloader": "node -e \"require('./src/downloader/app.js').test()\"",
+    "downloader": "node -e \"require('./src/downloader/app.js').main()\"",
+    "test-picc": "node -e \"require('./src/pic_combinder/app.js').test()\"",
+    "get-data": "node -e \"require('./src/get_data/app.js').main()\""
+  },
+  "author": "Wings",
+  "license": "ISC",
+  "dependencies": {
+    "@photo-sphere-viewer/core": "^5.1.7",
+    "@photo-sphere-viewer/equirectangular-tiles-adapter": "^5.1.7",
+    "async": "^3.2.4",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss-loader": "^7.3.3",
+    "request": "^2.88.2",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "sharp": "^0.32.3",
+    "style-loader": "^3.3.3",
+    "three": "^0.154.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
